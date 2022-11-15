@@ -309,6 +309,19 @@
   .logo-mobile, .instagram-mobile {
     display: none !important;
   }
+
+  /*--------------*/
+  .curtida{
+    color: #c02222;
+  }
+  ion-icon{
+    visibility: visible;
+  }
+  .ladinho{
+    display: flex;
+    align-items: center;
+  }
+  /*--------------*/
   
   @media (max-width: 935px) {
     .sidebar {
