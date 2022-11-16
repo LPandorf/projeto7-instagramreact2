@@ -25,7 +25,6 @@ function Post(props) {
     postCurtido();
     numeroCurtida();
   }
-  //postCurtido / numeroCurtida
   return (
     <div class="post">
       <div class="topo">
@@ -43,7 +42,7 @@ function Post(props) {
       </div>
 
       <div class="fundo">
-        
+
         <div class="acoes">
           <div>
             {curtida ? (
