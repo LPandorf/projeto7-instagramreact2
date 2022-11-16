@@ -38,7 +38,11 @@ function Post(props) {
       </div>
 
       <div class="conteudo">
-        <img src={props.imgpostada} onClick={postCurtido} alt={props.imgpostada}/>
+        {curtida ? (
+          <img src={props.imgpostada} alt={props.imgpostada}/>
+        ) : (
+          <img src={props.imgpostada} onClick={postCurtido} alt={props.imgpostada}/>
+        )}        
       </div>
 
       <div class="fundo">

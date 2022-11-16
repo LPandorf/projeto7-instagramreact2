@@ -63,7 +63,7 @@
                 ```
                 
 - Dados Dinâmicos
-    - [ ]  O projeto também deverá ter alguns dados dinâmicos que irão mudar na tela. São eles:
+    - [X]  O projeto também deverá ter alguns dados dinâmicos que irão mudar na tela. São eles:
         - [X]  Nome de usuário (ao apertar o lápis, aparece um prompt para alterá-lo)
             - O texto que deve ser mudado é apenas o que aparece ao lado do lápis!
                 
@@ -71,8 +71,8 @@
                 
         - [X]  Imagem de perfil (ao clicar uma vez na imagem, aparece um prompt pedindo novo link)
         - [X]  Salvar o post (ao clicar no ícone de salvar o post, ele deverá ficar preenchido)
-        - [ ]  Like no post
+        - [X]  Like no post
             - [X]   Ao clicar no ícone do like o usuário poderá curtir a postagem, caso a postagem já esteja curtida ao clicar no ícone a postagem não deve ficar curtida.
-            - [ ]   Ao clicar na imagem de um post do feed, o usuário poderá curtir a postagem, ou seja, o botão do like deverá ficar preenchido em vermelho
-                - [ ]   OBS: assim como no Instagram real, clicar na imagem **NÃO** retira likes, apenas adiciona caso já não tenha
+            - [X]   Ao clicar na imagem de um post do feed, o usuário poderá curtir a postagem, ou seja, o botão do like deverá ficar preenchido em vermelho
+                - [X]   OBS: assim como no Instagram real, clicar na imagem **NÃO** retira likes, apenas adiciona caso já não tenha
             - [X]   O número de likes deverá aumentar quando a pessoa der um like e diminuir quando retirá-lo.
