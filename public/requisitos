@@ -1,6 +1,6 @@
 - Geral
     - [X]  Você deve criar seu projeto usando o comando que demos do `create-react-app`
-        
+        jikdnfjbjkbk
         ```bash
         create-react-app nome-do-projeto --template @bootcamp-ra/cra-template-semana1
         ```
@@ -9,7 +9,7 @@
 - Layout
     - [X]  O layout é quase o mesmo do Instagram que vocês fizeram no início do curso! A única diferença é o ícone de lápis após o nome da pessoa dona do perfil, como visto abaixo:
     - [X]  Você pode utilizar o seu próprio código do Instagram para iniciar o projeto ou utilizar o que nós fornecemos no fim desse enunciado 😃
-    
+    dffsfrsdf
 - CSS e Imagens
     - [X]  Arquivos CSS podem ser colocados na pasta `public` e linkados diretamente no `index.html` da pasta `public`
     - [X]  Você também deve criar, dentro da `public`, uma pasta `assets` para colocar as images
