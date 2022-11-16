@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import Usuario from "./Usuario";
 
@@ -10,7 +8,7 @@ function Sugestao(props){
     return (
         <div class="sugestao">
             <div class="usuario">
-              <img src={props.imagem} />
+              <img src={props.imagem} alt={props.imagem} />
               <div class="texto">
                 <div class="nome">{props.nome}</div>
                 <div class="razao">{props.razao}</div>
@@ -54,5 +52,5 @@ export default function Sidebar(){
             © 2021 INSTAGRAM DO FACEBOOK
             </div>
         </div>
-    )
+    );
 }

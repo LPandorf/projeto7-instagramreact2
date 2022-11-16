@@ -13,7 +13,7 @@ function Perfil(props){
     }    
     return (
         <div class="ladinho">
-            <img src={foto} onClick={mudarFoto}/>
+            <img src={foto} onClick={mudarFoto} alt={foto}/>
             <div class="texto">
                 <strong>{props.user}</strong>
                 <span>
@@ -22,7 +22,7 @@ function Perfil(props){
                 </span>
             </div>
         </div>
-    )
+    );
 }
 const perfil =[
     {user:'catanacomics', nome:'Catana', foto:'assets/img/catanacomics.svg'}
@@ -34,5 +34,5 @@ export default function Usuario(){
                 <Perfil user={profile.user} nome={profile.nome} foto={profile.foto} />
             ))}
         </div>
-    )
+    );
 }
