@@ -21,6 +21,11 @@ function Post(props) {
   function postSalvo() {
     setSalvo(!salvo);
   }
+  function chamaAsDuasFuncoes(){
+    postCurtido();
+    numeroCurtida();
+  }
+  //postCurtido / numeroCurtida
   return (
     <div class="post">
       <div class="topo">
@@ -38,12 +43,13 @@ function Post(props) {
       </div>
 
       <div class="fundo">
+        
         <div class="acoes">
           <div>
             {curtida ? (
-              <ion-icon name="heart" class="curtida" onClick={postCurtido / numeroCurtida}></ion-icon>
+              <ion-icon name="heart" class="curtida" onClick={chamaAsDuasFuncoes}></ion-icon>
             ) : (
-              <ion-icon name="heart-outline" onClick={postCurtido / numeroCurtida}></ion-icon>
+              <ion-icon name="heart-outline" onClick={chamaAsDuasFuncoes}></ion-icon>
             )}
             <ion-icon name="chatbubble-outline"></ion-icon>
             <ion-icon name="paper-plane-outline"></ion-icon>
