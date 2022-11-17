@@ -13,12 +13,12 @@ function Perfil(props){
     }    
     return (
         <div class="ladinho">
-            <img src={foto} onClick={mudarFoto} alt={foto}/>
+            <img src={foto} onClick={mudarFoto} alt={foto} data-test="profile-image"/>
             <div class="texto">
                 <strong>{props.user}</strong>
-                <span>
+                <span data-test="name">
                     {nome}
-                    <ion-icon name="pencil" onClick={mudarNome}></ion-icon>
+                    <ion-icon name="pencil" onClick={mudarNome} data-test="edit-name"></ion-icon>
                 </span>
             </div>
         </div>
@@ -29,7 +29,7 @@ const perfil =[
 ]
 export default function Usuario(){
     return (
-        <div class="usuario">
+        <div class="usuario" data-test="user">
             {perfil.map((profile) =>(
                 <Perfil user={profile.user} nome={profile.nome} foto={profile.foto} />
             ))}

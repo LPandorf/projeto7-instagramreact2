@@ -77,4 +77,4 @@
                 - [X]   OBS: assim como no Instagram real, clicar na imagem **NÃO** retira likes, apenas adiciona caso já não tenha
             - [X]   O número de likes deverá aumentar quando a pessoa der um like e diminuir quando retirá-lo.
 - Para correção automática 
-    - [ ]   Data-test nas tags html.
+    - [X]   Data-test nas tags html.

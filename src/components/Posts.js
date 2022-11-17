@@ -19,7 +19,7 @@ function Post(props) {
     setSalvo(!salvo);
   }
   return (
-    <div class="post">
+    <div class="post" data-test="post">
       <div class="topo">
         <div class="usuario">
           <img src={props.imagem} alt={props.imagem}/>
@@ -32,9 +32,9 @@ function Post(props) {
 
       <div class="conteudo">
         {curtida ? (
-          <img src={props.imgpostada} alt={props.imgpostada}/>
+          <img src={props.imgpostada} alt={props.imgpostada} data-test="post-image"/>
         ) : (
-          <img src={props.imgpostada} onClick={postCurtido} alt={props.imgpostada}/>
+          <img src={props.imgpostada} onClick={postCurtido} alt={props.imgpostada} data-test="post-image"/>
         )}        
       </div>
 
@@ -43,18 +43,18 @@ function Post(props) {
         <div class="acoes">
           <div>
             {curtida ? (
-              <ion-icon name="heart" class="curtida" onClick={postCurtido}></ion-icon>
+              <ion-icon name="heart" class="curtida" onClick={postCurtido} data-test="like-post"></ion-icon>
             ) : (
-              <ion-icon name="heart-outline" onClick={postCurtido}></ion-icon>
+              <ion-icon name="heart-outline" onClick={postCurtido} data-test="like-post"></ion-icon>
             )}
             <ion-icon name="chatbubble-outline"></ion-icon>
             <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
           <div>
             {salvo ? (
-              <ion-icon name="bookmark" class="salvo" onClick={postSalvo}></ion-icon>
+              <ion-icon name="bookmark" class="salvo" onClick={postSalvo} data-test="save-post"></ion-icon>
             ) : (
-              <ion-icon name="bookmark-outline" class="salvo" onClick={postSalvo} ></ion-icon>
+              <ion-icon name="bookmark-outline" class="salvo" onClick={postSalvo} data-test="save-post"></ion-icon>
             )}
 
           </div>
@@ -63,7 +63,7 @@ function Post(props) {
         <div class="curtidas">
           <img src={props.imgcurtiu} alt={props.imgcurtiu}/>
           <div class="texto">
-            Curtido por <strong>{props.curtidopor}</strong> e <strong>outras {numero} pessoas</strong>
+            Curtido por <strong>{props.curtidopor}</strong> e <strong data-test="likes-number">outras {numero} pessoas</strong>
           </div>
         </div>
       </div>
