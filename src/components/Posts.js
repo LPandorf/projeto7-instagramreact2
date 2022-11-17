@@ -14,16 +14,9 @@ function Post(props) {
       setNumero(numero - 0.001);
     }
   }
-  function numeroCurtida() {
-    setNumero(numero);
-  }
   const [salvo, setSalvo] = React.useState(props.salvo);
   function postSalvo() {
     setSalvo(!salvo);
-  }
-  function chamaAsDuasFuncoes(){
-    postCurtido();
-    numeroCurtida();
   }
   return (
     <div class="post">
@@ -50,9 +43,9 @@ function Post(props) {
         <div class="acoes">
           <div>
             {curtida ? (
-              <ion-icon name="heart" class="curtida" onClick={chamaAsDuasFuncoes}></ion-icon>
+              <ion-icon name="heart" class="curtida" onClick={postCurtido}></ion-icon>
             ) : (
-              <ion-icon name="heart-outline" onClick={chamaAsDuasFuncoes}></ion-icon>
+              <ion-icon name="heart-outline" onClick={postCurtido}></ion-icon>
             )}
             <ion-icon name="chatbubble-outline"></ion-icon>
             <ion-icon name="paper-plane-outline"></ion-icon>
