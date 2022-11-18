@@ -4,12 +4,16 @@ function Perfil(props){
     const [nome, setNome] = React.useState(props.nome);
     function mudarNome(){
         const novoNome=prompt("Digite seu novo nome:");
-        setNome(novoNome);    
+        if(novoNome!==''){
+            setNome(novoNome);  
+        }  
     }
     const [foto, setFoto] = React.useState(props.foto);
     function mudarFoto(){
         const novaFoto=prompt("Coloque o link da sua nova foto de perfil:");
-        setFoto(novaFoto); 
+        if(novaFoto!==''){
+            setFoto(novaFoto); 
+        }
     }    
     return (
         <div class="ladinho">
